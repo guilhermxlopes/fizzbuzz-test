@@ -16,20 +16,32 @@
   <body>
     <div class="container-lg d-flex align-items-center" style="height: 100vh">
       <div class="container-md bg-warning rounded-3 p-5">
-        <div class="row text-center my-5">
-          <h1>FizzBuzz!</h1>
-          <p>
-            The program will only work after you submit your input. Everytime
-            you insert a number that can divided by 3 the program will display
-            "Fizz" and if this number is only divided by 5, the program will
-            display "Buzz". If the number is divided by 3 and 5, "FizzBuzz" will
-            appear!
+        <div
+          class="row text-center my-1 justify-content-center align-items-center"
+        >
+          <h1 class="display-2">FizzBuzz!</h1>
+          <p class="lead">
+            The program will only work after you submit your input.
           </p>
+          <ul class="list-unlisted text-center">
+            <li class="list-inline">
+              If your input is only divided by <strong>3</strong>, the program
+              will display <strong>"Fizz"</strong>.
+            </li>
+            <li class="list-inline">
+              If your input is only divided by <strong>5</strong>, the program
+              will display <strong>"Buzz"</strong>.
+            </li>
+            <li class="list-inline">
+              If your input is divided by <strong>3 and 5</strong>,
+              <strong>"FizzBuzz"</strong> will be displayed.
+            </li>
+          </ul>
         </div>
         <div class="row text-center">
           <p class="answer"></p>
         </div>
-        <div class="row text-center my-5 justify-content-center">
+        <div class="row text-center my-3 justify-content-center">
           <div class="col-2">
             <input type="number" id="input" value="number" />
           </div>
