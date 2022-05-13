@@ -1,5 +1,5 @@
 function start() {
-  var inputUser = window.document.querySelector("input#input");
+  var inputUser = window.document.querySelector("input#userInput");
   var numberUser = Number(inputUser.value);
   var para = window.document.getElementsByTagName("p")[1];
 
