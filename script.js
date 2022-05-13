@@ -3,13 +3,17 @@ function start() {
   var numberUser = Number(inputUser.value);
   var para = window.document.getElementsByTagName("p")[1];
 
-  for (let i = 1; i <= numberUser; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      para.innerHTML = "FizzBuzz";
-    } else if (i % 3 === 0) {
-      para.innerHTML = "Fizz";
-    } else if (i % 5 === 0) {
-      para.innerHTML = "Buzz";
-    } else para.innerHTML = "zZZzzZZZ";
+  if (numberUser >= 1500 || numberUser < 0 || numberUser == " ") {
+    alert("Review your input!");
+  } else {
+    for (let i = 1; i <= numberUser; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        para.innerHTML = "<strong>FizzBuzz</strong>";
+      } else if (i % 3 === 0) {
+        para.innerHTML = "<strong>Fizz</strong>";
+      } else if (i % 5 === 0) {
+        para.innerHTML = "<strong>Buzz</strong>";
+      } else para.innerHTML = "<strong>zZZzzZZZ</strong>";
+    }
   }
 }
