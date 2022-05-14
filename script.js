@@ -1,3 +1,6 @@
+var btn = document.getElementById("btn");
+btn.addEventListener("click", start);
+
 function start() {
   var inputUser = window.document.querySelector("input#userInput");
   var numberUser = Number(inputUser.value);
